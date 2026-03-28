@@ -1,0 +1,26 @@
+project:
+  name: visionvial
+  version: "0.1.0"
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_semic: data/semic
+  models: models
+  results: results
+
+model:
+  architecture: yolo11n  # opciones: yolo11n, yolo11s, yolo11m, yolov8n, yolov8s
+  pretrained: true
+  img_size: 640
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+
+device: auto  # auto detecta CUDA, o forzar: cpu, cuda:0
+
+classes:
+  - car
+  - truck
+  - bus
+  - motorcycle
+  - ambulance

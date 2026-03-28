@@ -1,0 +1,18 @@
+dataset:
+  name: "SEMIC - Imágenes Reales"
+  source: "privado"
+  kaggle_slug: ""  # No aplica - dataset privado
+  size: "Por definir"
+  format: "custom"  # Se definirá cuando lleguen las imágenes
+  needs_conversion: true
+  split:
+    train: true
+    val: true
+    test: true
+  classes: []  # Se definirán según las imágenes proporcionadas
+  notes: >
+    Dataset privado de la empresa SEMIC (infraestructura carretera).
+    Se usará para fine-tuning del modelo entrenado con datasets públicos.
+    Pendiente: definir formato, clases y proceso de anotación.
+  tier: 3
+  status: "pendiente"

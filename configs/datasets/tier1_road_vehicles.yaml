@@ -1,0 +1,15 @@
+dataset:
+  name: "Road Vehicle Images"
+  source: "kaggle"
+  kaggle_slug: "ashfakyeafi/road-vehicle-images-dataset"
+  size: "120 MB"
+  format: "yolo"  # yolo, coco, voc, custom
+  needs_conversion: false
+  split:
+    train: true
+    val: true
+    test: false
+  classes: ["vehicle"]
+  notes: "Carreteras de Bangladesh. Formato YOLO nativo."
+  tier: 1
+  status: "pendiente"  # pendiente, descargado, procesado, integrado

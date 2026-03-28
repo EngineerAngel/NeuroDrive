@@ -1,0 +1,15 @@
+dataset:
+  name: "Vehicles OpenImages"
+  source: "kaggle"
+  kaggle_slug: "mohamedhanyyy/chest-ctscan-images"  # placeholder - reemplazar con slug correcto
+  size: "500 MB"
+  format: "custom"
+  needs_conversion: true
+  split:
+    train: true
+    val: true
+    test: false
+  classes: ["car", "truck", "bus", "motorcycle"]
+  notes: "Subconjunto de OpenImages enfocado en vehículos. Requiere conversión a formato YOLO."
+  tier: 2
+  status: "pendiente"

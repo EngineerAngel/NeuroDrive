@@ -1,0 +1,53 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ===== Entorno virtual =====
+venv/
+env/
+.venv/
+
+# ===== Variables de entorno =====
+.env
+
+# ===== Datasets (solo conservar .gitkeep) =====
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/semic/*
+!data/semic/.gitkeep
+
+# ===== Modelos entrenados =====
+models/*.pt
+models/*.onnx
+models/*.torchscript
+models/*.engine
+
+# ===== Resultados de entrenamiento =====
+runs/
+wandb/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Imágenes en raíz (no en docs/ ni data/samples/) =====
+/*.jpg
+/*.jpeg
+/*.png
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db

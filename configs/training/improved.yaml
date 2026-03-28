@@ -1,0 +1,18 @@
+training:
+  name: "improved_tier1_tier2"
+  model: yolo11s
+  dataset: tier1_road_vehicles  # cambiar a dataset combinado cuando esté listo
+  epochs: 100
+  batch_size: 16
+  img_size: 640
+  optimizer: auto
+  lr0: 0.01
+  augment: true
+  patience: 15
+  save_period: 10
+  project: results
+  name_run: improved_v1
+
+notes: >
+  Segundo entrenamiento con modelo más grande (yolo11s).
+  Objetivo: mejorar métricas usando datasets Tier 1 + Tier 2 combinados.

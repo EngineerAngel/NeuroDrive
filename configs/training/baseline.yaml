@@ -1,0 +1,16 @@
+training:
+  name: "baseline_tier1"
+  model: yolo11n
+  dataset: tier1_road_vehicles
+  epochs: 50
+  batch_size: 16
+  img_size: 640
+  optimizer: auto
+  lr0: 0.01
+  augment: true
+  patience: 10  # early stopping
+  save_period: 10  # guardar checkpoint cada N epochs
+  project: results
+  name_run: baseline_v1
+
+notes: "Primer entrenamiento con Road Vehicle Images. Objetivo: establecer métricas base."

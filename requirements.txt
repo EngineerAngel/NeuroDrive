@@ -1,0 +1,29 @@
+# Core ML
+ultralytics>=8.1.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision
+opencv-python>=4.8.0
+albumentations>=1.3.0
+Pillow>=10.0.0
+
+# Data & Config
+numpy>=1.24.0
+pandas>=2.0.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# API
+fastapi>=0.100.0
+uvicorn>=0.23.0
+python-multipart>=0.0.6
+
+# Notebooks & Visualization
+jupyter>=1.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Testing
+pytest>=7.4.0
+httpx>=0.24.0

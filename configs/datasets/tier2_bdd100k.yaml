@@ -1,0 +1,15 @@
+dataset:
+  name: "BDD100K"
+  source: "kaggle"
+  kaggle_slug: "marquis03/bdd100k"
+  size: "7 GB"
+  format: "coco"
+  needs_conversion: true
+  split:
+    train: true
+    val: true
+    test: true
+  classes: ["car", "truck", "bus", "motorcycle", "bicycle", "pedestrian", "traffic light", "traffic sign"]
+  notes: "Dataset de conducción diverso. Muy grande, usar subset. Requiere conversión COCO->YOLO."
+  tier: 2
+  status: "pendiente"

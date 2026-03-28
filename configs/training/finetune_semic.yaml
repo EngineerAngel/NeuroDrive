@@ -1,0 +1,21 @@
+training:
+  name: "finetune_semic"
+  model: yolo11s  # usar el mejor modelo de la fase anterior
+  pretrained_weights: ""  # ruta al modelo entrenado con Tier 1+2
+  dataset: semic
+  epochs: 30
+  batch_size: 8  # batch más pequeño porque el dataset es más pequeño
+  img_size: 640
+  optimizer: auto
+  lr0: 0.001  # learning rate más bajo para fine-tuning
+  augment: true
+  patience: 10
+  save_period: 5
+  project: results
+  name_run: finetune_semic_v1
+  freeze_layers: 10  # congelar las primeras capas del backbone
+
+notes: >
+  Fine-tuning con imágenes reales de SEMIC.
+  Usar learning rate bajo y congelar primeras capas para preservar features aprendidas.
+  Pendiente: definir ruta a pesos pre-entrenados y configurar dataset SEMIC.

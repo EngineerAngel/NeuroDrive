@@ -1,0 +1,15 @@
+dataset:
+  name: "DAWN - Detection in Adverse Weather"
+  source: "kaggle"
+  kaggle_slug: ""  # placeholder - agregar slug cuando se identifique
+  size: "300 MB"
+  format: "custom"
+  needs_conversion: true
+  split:
+    train: true
+    val: true
+    test: false
+  classes: ["vehicle"]
+  notes: "Imágenes de vehículos en condiciones climáticas adversas (lluvia, niebla, nieve). Útil para robustez."
+  tier: 2
+  status: "pendiente"

@@ -1,0 +1,15 @@
+dataset:
+  name: "Cars Detection"
+  source: "kaggle"
+  kaggle_slug: "sshikamaru/car-object-detection"
+  size: "200 MB"
+  format: "custom"
+  needs_conversion: true
+  split:
+    train: true
+    val: true
+    test: false
+  classes: ["car"]
+  notes: "Dataset de detección de autos. Requiere conversión a formato YOLO."
+  tier: 1
+  status: "pendiente"
